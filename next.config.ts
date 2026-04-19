@@ -1,9 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'standalone',
-  experimental: {
-    serverActions: true,
-  },
-}
+import type { NextConfig } from 'next';
 
-module.exports = nextConfig
+const config: NextConfig = {
+  experimental: {
+    appDir: true,
+    runtime: 'nodejs',
+    serverComponents: true,
+    concurrentFeatures: true,
+    output: 'standalone',
+  },
+};
+
+export default config;
