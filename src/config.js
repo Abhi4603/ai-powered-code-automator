@@ -21,7 +21,7 @@ export const config = {
   linear: {
     apiKey: required('LINEAR_API_KEY'),
     webhookSecret: optional('LINEAR_WEBHOOK_SECRET', ''),
-    triggerLabel: optional('LINEAR_TRIGGER_LABEL', 'ai'),
+    triggerLabel: optional('LINEAR_TRIGGER_LABEL', 'Abhishek c'),
   },
 
   // GitHub
