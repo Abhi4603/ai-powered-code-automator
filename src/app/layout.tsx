@@ -1,7 +1,4 @@
 import type { ReactNode } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import styles from './globals.css';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,23 +6,17 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      <Head>
+    <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AI PR Pipeline</title>
-      </Head>
-      <header className={styles.header}>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/hello">
-                Hello
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main className={styles.main}>{children}</main>
-    </>
+      </head>
+      <body>
+        {children}
+      </body>
+    </html>
   );
 };
 

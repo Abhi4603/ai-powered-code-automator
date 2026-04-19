@@ -1,13 +1,7 @@
-import type { NextConfig } from 'next';
+import { NextConfig } from 'next';
 
 const config: NextConfig = {
-  experimental: {
-    appDir: true,
-    runtime: 'nodejs',
-    serverComponents: true,
-    concurrentFeatures: true,
-    output: 'standalone',
-  },
+  output: 'standalone',
 };
 
 export default config;
